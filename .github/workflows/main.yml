@@ -22,7 +22,7 @@ jobs:
               --health-timeout=10s
               --health-retries=5
 
-    cypress-tests:
+
       runs-on: ubuntu-latest
       steps:
         - name: Checkout code

@@ -4,7 +4,7 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.get('/', (req, res) => {
-    res.send(
+    res.send(`
         <html>
             <head>
                 <title>Welcome to My App</title>
@@ -13,7 +13,7 @@ app.get('/', (req, res) => {
                 <h1>Hello World</h1>
             </body>
         </html>
-    );
+    `);
 });
 
 app.listen(PORT, () => {
